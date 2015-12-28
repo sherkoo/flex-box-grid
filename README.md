@@ -4,10 +4,10 @@ A simple, light weight Flex Box Grid System designed to utilize flex-box with a 
 Current Column Sizes:
 ===
 ```HTML
-<div class="grid-1"></div>
-<div class="grid-1-2"></div>
-<div class="grid-1-3"></div>
-<div class="grid-1-4"></div>
+<div class="grid-1">100%</div>
+<div class="grid-1-2">50%</div>
+<div class="grid-1-3">33.33%</div>
+<div class="grid-1-4">25%</div>
 ```
 
 Instructions:
