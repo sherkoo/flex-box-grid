@@ -2,14 +2,22 @@
 A simple, light weight Flex Box Grid System designed to utilize flex-box with a minimal amount of code.
 
 Current Column Sizes:
-grid-1, grid-1-2, grid-1-3, grid-1-4
+===
+```HTML
+<div class="grid-1"></div>
+<div class="grid-1-2"></div>
+<div class="grid-1-3"></div>
+<div class="grid-1-4"></div>
+```
 
 Instructions:
+===
 1. Wrap your content with a class of 'grid-container'.
 2. Establish each row with a class of 'grid-row'.
 3. Specify each column with a class of 'grid-1-'
 
 Example:
+===
 ```HTML
 <div class="grid-container">
   <div class="grid-row">
