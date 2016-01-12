@@ -1,5 +1,5 @@
 # Flex Box Grid
-A simple, light weight Flex Box Grid System designed to utilize flex-box.
+A simple, light weight Flex Box Grid System.
 
 Current Column Sizes:
 ===
