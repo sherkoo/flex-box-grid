@@ -1,5 +1,5 @@
 # Flex Box Grid
-A simple, light weight Flex Box Grid System designed to utilize flex-box with a minimal amount of code.
+A simple, light weight Flex Box Grid System designed to utilize flex-box.
 
 Current Column Sizes:
 ===
@@ -12,9 +12,9 @@ Current Column Sizes:
 
 Instructions:
 ===
-1. Wrap your content with a class of 'grid-container'.
-2. Establish each row with a class of 'grid-row'.
-3. Specify each column with a class of 'grid-1-'
+1. Wrap your content with a class of ```.grid-container```
+2. Establish each row with a class of ```.grid-row```
+3. Specify each column with a class of ```.grid-1-*```
 
 Example:
 ===
