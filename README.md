@@ -1,29 +1,23 @@
 # Flex Box Grid
-A simple, light weight Flex Box Grid System.
+A simple, light weight 12 column Flex Box Grid System.
 
 Current Column Sizes:
 ===
 ```HTML
-<div class="grid-1">100%</div>
-<div class="grid-1-2">50%</div>
-<div class="grid-1-3">33.33%</div>
-<div class="grid-1-4">25%</div>
+<div class="col-12"></div>
 ```
 
 Instructions:
 ===
-1. Wrap your content with a class of ```.grid-container```
-2. Establish each row with a class of ```.grid-row```
-3. Specify each column with a class of ```.grid-1-*```
+1. Wrap your content with a class of ```.container```
+2. Specify each column with a class of ```.col-1-*```
 
 Example:
 ===
 ```HTML
-<div class="grid-container">
-  <div class="grid-row">
-    <div class="grid-1 grid-sm-1">
-      <div class="box">Grid 1/1</div>
-    </div>
+<div class="container">
+  <div class="col-6 col-sm-12">
+    <div class="box">Content..</div>
   </div>
 </div>
 ```
