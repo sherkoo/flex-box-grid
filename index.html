@@ -1,88 +1,253 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Flexbox Grid</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="flexbox-grid.css">
-</head>
-<body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Flex Box Grid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flexboxgrid.css" media="screen" title="no title" charset="utf-8">
+    <style media="screen">
+      body{
+        margin: 0;
+        background-color: #fafafa;
+        line-height: 1.5;
+        color: #333;
+        font: 16px/1.5 "helvetica neue", arial, sans-serif;
+      }
 
-  <header class="header">
-    <h1>FlexBox Grid</h1>
-  </header>
+      p{
+        margin: 0;
+      }
 
-  <div class="grid-container">
-    <div class="grid-row">
-      <div class="grid-1 grid-sm-1">
-        <div class="box">Grid 1/1</div>
-      </div>
-    </div>
+      .box{
+        background-color: #333;
+        height: 40px;
+      }
 
-    <div class="grid-row">
-      <div class="grid-1-2 grid-md-1">
-        <div class="box">Grid 1/2</div>
-      </div>
-      <div class="grid-1-2 grid-md-1">
-        <div class="box">Grid 1/2</div>
-      </div>
-    </div>
+      .header{
+        background-color: #fff;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 20px;
+      }
 
-    <div class="grid-row">
-      <div class="grid-1-3 grid-md-1">
-        <div class="box">Grid 1/3</div>
-      </div>
-      <div class="grid-1-3 grid-md-1">
-        <div class="box">Grid 1/3</div>
-      </div>
-      <div class="grid-1-3 grid-md-1">
-        <div class="box">Grid 1/3</div>
-      </div>
-    </div>
+      img{
+        max-width: 100%;
+      }
 
-    <div class="grid-row">
-      <div class="grid-1-4 grid-md-1">
-        <div class="box">Grid 1/4 Goes full on first breakpoint</div>
-      </div>
-      <div class="grid-1-4 grid-md-1">
-        <div class="box">Grid 1/4 Goes full on first breakpoint</div>
-      </div>
-      <div class="grid-1-4 grid-md-1">
-        <div class="box">Grid 1/4 Goes full on first breakpoint</div>
-      </div>
-      <div class="grid-1-4 grid-md-1">
-        <div class="box">Grid 1/4 Goes full on first breakpoint</div>
-      </div>
-    </div>
+      .header{
+        height: 50px;
+      }
 
-    <div class="grid-row">
-      <div class="grid-1-3 grid-md-1">
-        <div class="box">Grid 1/3</div>
-      </div>
-      <div class="grid-1-3 grid-md-1">
-        <div class="box">Grid 1/3</div>
-      </div>
-      <div class="grid-1-3 grid-md-1">
-        <div class="box">Grid 1/3</div>
-      </div>
-    </div>
+      .header h1{
+        margin: 0px;
+        letter-spacing: -2px;
+      }
 
-    <div class="grid-row">
-      <div class="grid-1-2 grid-md-1">
-        <div class="box">Grid 1/2</div>
-      </div>
-      <div class="grid-1-2 grid-md-1">
-        <div class="box">Grid 1/2</div>
-      </div>
-    </div>
+      .nav{
+        float: right;
+        margin: 0px;
+      }
 
-    <div class="grid-row">
-      <div class="grid-1 grid-sm-1">
-        <div class="box">Grid 1/1</div>
-      </div>
-    </div>
-  </div>
+      .nav li{
+        padding-top: 12px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
 
-</body>
+    <header class="header">
+      <div class="container">
+        <div class="col-12 col-sm12">
+          <h1>Flex Box Grid</h1>
+        </div>
+      </div>
+    </header>
+
+      <div class="container">
+        <div class="col-12">
+          <div class="box"></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="col-6">
+          <div class="box"></div>
+        </div>
+        <div class="col-6">
+          <div class="box"></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="col-4 col-md-12">
+          <div class="box"></div>
+        </div>
+        <div class="col-4 col-md-12">
+          <div class="box"></div>
+        </div>
+        <div class="col-4 col-md-12">
+          <div class="box"></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="col-3">
+          <div class="box"></div>
+        </div>
+        <div class="col-3">
+          <div class="box"></div>
+        </div>
+        <div class="col-3">
+          <div class="box"></div>
+        </div>
+        <div class="col-3">
+          <div class="box"></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="col-2">
+          <div class="box"></div>
+        </div>
+        <div class="col-2">
+          <div class="box"></div>
+        </div>
+        <div class="col-2">
+          <div class="box"></div>
+        </div>
+        <div class="col-2">
+          <div class="box"></div>
+        </div>
+        <div class="col-2">
+          <div class="box"></div>
+        </div>
+        <div class="col-2">
+          <div class="box"></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="col-1 col-md-6 col-sm-12">
+          <div class="box">
+
+          </div>
+        </div>
+        <div class="col-1 col-md-6 col-sm-12">
+          <div class="box">
+
+          </div>
+        </div>
+        <div class="col-1 col-md-6 col-sm-12">
+          <div class="box">
+
+          </div>
+        </div>
+        <div class="col-1 col-md-6 col-sm-12">
+          <div class="box">
+
+          </div>
+        </div>
+        <div class="col-1 col-md-6 col-sm-12">
+          <div class="box">
+
+          </div>
+        </div>
+        <div class="col-1 col-md-6 col-sm-12">
+          <div class="box">
+
+          </div>
+        </div>
+        <div class="col-1 col-md-6 col-sm-12">
+          <div class="box">
+
+          </div>
+        </div>
+        <div class="col-1 col-md-6 col-sm-12">
+          <div class="box">
+
+          </div>
+        </div>
+        <div class="col-1 col-md-6 col-sm-12">
+          <div class="box">
+
+          </div>
+        </div>
+        <div class="col-1 col-md-6 col-sm-12">
+          <div class="box">
+
+          </div>
+        </div>
+        <div class="col-1 col-md-6 col-sm-12">
+          <div class="box">
+
+          </div>
+        </div>
+        <div class="col-1 col-md-6 col-sm-12">
+          <div class="box">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="col-2 col-sm-12">
+          <div class="box">
+          </div>
+        </div>
+        <div class="col-10 col-sm-12">
+          <div class="box">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="col-3 col-sm-12">
+          <div class="box">
+          </div>
+        </div>
+        <div class="col-9 col-sm-12">
+          <div class="box">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="col-4 col-sm-12">
+          <div class="box">
+          </div>
+        </div>
+        <div class="col-8 col-sm-12">
+          <div class="box">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="col-5 col-sm-12">
+          <div class="box">
+          </div>
+        </div>
+        <div class="col-7 col-sm-12">
+          <div class="box">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="col-6 col-sm-12">
+          <div class="box">
+          </div>
+        </div>
+        <div class="col-6 col-sm-12">
+          <div class="box">
+
+          </div>
+        </div>
+      </div>
+
+  </body>
 </html>
